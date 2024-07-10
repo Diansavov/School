@@ -1,0 +1,15 @@
+.add-container{
+    display: block;
+    width: 35%;
+    height: 35%;
+    margin: 10px auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.add-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

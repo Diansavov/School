@@ -1,0 +1,138 @@
+/*Body*/
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+  margin-bottom: 60px;
+  color: white;
+
+  background: url('/images/wolves.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: transparent;
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.45);
+  margin-bottom: 1rem;
+
+}
+
+.navbar-container-pages {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: normal !important;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 30px !important;
+
+}
+
+.footer-element {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  color: white;
+
+}
+
+.footer-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.footer-pages a {
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.footer-copyright {
+  margin-top: 30px;
+}
+
+.footer-icon {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon svg {
+  width: 80%;
+  height: 80%;
+  color: black;
+}
+
+.bigger-icon {
+  width: 50px;
+  height: 50px;
+
+}
+
+.footer-field {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-field p {
+  font-size: 16px;
+}
+
+.footer-addresss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.footer-body {
+  display: block;
+  max-width: 500px;
+}
+
+.media-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon {
+  transition: 0.35s ease-in-out;
+
+}
+
+.footer-icon:hover {
+  transform: translateY(-5px);
+}

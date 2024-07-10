@@ -1,0 +1,27 @@
+.products-container{
+    display: block;
+    width: 35%;
+    height: 35%;
+    margin: 10px auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container-text{
+    text-align: center;
+    font-size: 30px;
+}
+.text-title{
+    font-weight: bold;   
+}
+.container-table{
+    margin-top: 10px;
+    width: 100%;
+}
+.table-column{
+    width: 120px;
+}
+th{
+    color: white;
+}

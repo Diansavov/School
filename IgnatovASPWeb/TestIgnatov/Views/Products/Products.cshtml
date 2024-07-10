@@ -1,0 +1,59 @@
+@model List<Product>;
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/products/products.css" />
+}
+<div class="container-text text-title">
+    <h1>All Products</h1>
+</div>
+<div class="products-container">
+    <form>
+        <div class="container-text">
+            <button class="btn btn-outline-success" asp-area="" asp-controller="Products" asp-action="Add">Add
+                Product</button>
+        </div>
+        <table class="table table-bordered container-table ">
+            <thead>
+                <tr class="font-weight-bold">
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th class="text-center">
+                        Options
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th class="table-column">
+                            @item.Name
+                        </th>
+                        <th class="table-column">
+                            @Math.Round(item.Price, 2)
+                        </th>
+                        <th class="table-column">
+                            @item.Stock
+                        </th>
+                        <th class="text-center">
+                            <a class="btn btn-warning" asp-route-id="@item.Id" asp-controller="Products" asp-action="Edit">Edit</a>
+                            <a class="btn btn-danger" asp-route-id="@item.Id" asp-controller="Products" asp-action="Delete">Delete</a>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </form>
+</div>
